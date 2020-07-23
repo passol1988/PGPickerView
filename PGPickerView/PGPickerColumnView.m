@@ -321,6 +321,8 @@ static NSString *const cellReuseIdentifier = @"PGPickerColumnCell";
         cell.label.textColor = [self textColorOfOtherRow:row];
         cell.label.font = [self textFontOfOtherRow:row];
     }
+    cell.label.adjustsFontSizeToFitWidth = true;
+    cell.label.minimumScaleFactor = 0.4;
     return cell;
 }
 
